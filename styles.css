@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --mian-color: #F6C391;
+    --second-color: #E76161;
+    --secondary-text-: #faf6f6;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+a {
+    color: #0f0f0f;
+    transition: .3s ease;
+}
+
+a:hover {
+    color: var(--secondary-text-);
+}
+
+section {
+    padding: 30px 40px;
+}
+
+/* ============ header section ============ */
+header>div {
+    height: 300px;
+    background: url("images/red-fox.jpg") no-repeat center;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    background: var(--mian-color);
+}
+
+/* ====================== home page css ===================== */
+.home_section1,
+.home_section2 {
+    text-align: center;
+}
+
+/* ============ section 1 ============ */
+.home_section1_grid {
+    display: grid;
+    grid-template-columns: 200px 200px auto;
+    column-gap: 10px;
+}
+
+.home_section1_grid img {
+    width: 100%;
+}
+
+.home_section1_about {
+    border: 1px solid var(--mian-color);
+}
+
+.home_section1_about h2 {
+    font-size: 1.2rem;
+    color: var(--secondary-text-);
+    background: var(--mian-color);
+}
+
+.home_section1_about p,
+.home_section1_about h2 {
+    padding: 10px;
+    border-bottom: 1px solid var(--mian-color);
+}
+
+.home_section1_about p:last-child {
+    border-bottom: none;
+}
+
+/* ============ section 2 ============ */
+.home_section2_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.home_section2_flex>div {
+    width: 400px;
+    background: var(--second-color);
+    border: 1px solid var(--second-color);
+}
+
+.home_section2_flex>div h2 {
+    font-size: 1.2rem;
+    color: var(--secondary-text-);
+    height: 40px;
+}
+
+.home_section2_flex img {
+    width: 100%;
+}
+
+/* ====================== page1 css ===================== */
+.page1_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page1_section h1 {
+    border-bottom: 6px dotted black;
+    width: 15%;
+    text-align: center;
+    line-height: 0em;
+    margin: 10px 0 20px;
+}
+
+.page1_section h1 span {
+    background: white;
+    padding: 0 10px;
+}
+
+.idols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px 150px;
+}
+
+.idols img {
+    width: 350px;
+    height: 350px;
+}
+
+/* ====================== page2 css ===================== */
+.page2_section1 h1,
+.page2_section2 h1 {
+    text-align: center;
+}
+
+/* ========== section1 ========= */
+.content_container img {
+    width: 100%;
+    height: 300px;
+}
+
+.content_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 15px;
+}
+
+.content_container h2 {
+    background: var(--second-color);
+    padding: 3px;
+    width: fit-content;
+    color: var(--secondary-text-);
+    font-size: 1.2rem;
+}
+
+/* ========== section2 ========= */
+.page2_section2 {
+    text-align: center;
+}
+
+/* ====================== page3 css ===================== */
+.page3_section h1 {
+    text-align: center;
+}
+
+.page3_section_div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.page3_section_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 100px;
+    background-color: rgb(224, 218, 218);
+    line-height: 1.8;
+}
+
+.page3_section_div div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.page3_section>p {
+    padding: 20px 0;
+}
+
+.page3_section_img {
+    width: 100%;
+    height: 700px;
+}
+
+/* ====================== page5 css ===================== */
+.page5_section {
+    text-align: center;
+}
+
+.food {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 10px 40px;
+}
+
+.food div {
+    width: 300px;
+    background: var(--second-color);
+    color: var(--secondary-text-);
+    border: 1px solid var(--second-color);
+}
+
+.food div img {
+    width: 100%;
+    height: 300px;
+}
+
+.food div h2 {
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+/* ====================== page6 css ===================== */
+.page6_section {
+    text-align: center;
+}
+
+.travel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px 150px;
+}
+
+.travel div {
+    background: var(--second-color);
+    border: 1px solid var(--second-color);
+}
+
+.travel div img {
+    width: 350px;
+    height: 350px;
+}
+
+.travel div h2 {
+    font-size: 1.2rem;
+    color: var(--secondary-text-);
+}
+
+.travel div p {
+    background: white;
+}
+
+/* ============ footer section ============ */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: var(--secondary-text-);
+    background: var(--mian-color);
+}
+
+footer>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
