@@ -263,6 +263,47 @@ header .navbar ul {
     background: white;
 }
 
+/* ====================== page7 css ===================== */
+.contac-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contac-form form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background: var(--mian-color);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contac-form textarea {
+    resize: none;
+    height: 240px;
+}
+
+.contac-form button {
+    background: var(--second-color);
+    display: inline-block;
+    font-size: 16px;
+    color: var(--text-color);
+    width: 160px;
+    transition: all .45s ease;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    margin-left: 2px;
+}
+
+.contac-form button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /* ============ footer section ============ */
 footer {
     text-align: center;
